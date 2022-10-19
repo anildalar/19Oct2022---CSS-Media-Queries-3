@@ -1,0 +1,70 @@
+/*
+    element{
+
+    }
+*/
+
+header{
+    width: 100%;
+    height: 300px;
+    background-color: lightgreen;
+}
+main{
+    width: 100%;
+    height: 1000px;
+    border:1px dashed red;
+
+}
+
+main > section{
+    width: 33%;
+    height: 100%;
+    background-color:lightblue;
+    display: inline-block;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    border:1px dashed blue;
+}
+
+footer article{
+    width: 24.6%;
+    height: 100%;
+    background-color:#eee;
+    display: inline-block;
+}
+
+/*
+    @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+        CSS-Code;
+    }
+*/
+
+/* Small Device */
+@media only screen and (min-width:0px) and (max-width:767px){
+    main > section{
+        width: 100%;
+        height: 33%;
+    }   
+    footer article{
+        width: 100%;
+    } 
+}
+
+/* Medium Device */
+@media only screen and (min-width:768px) and (max-width:991px){
+    main > section{
+        width: 100%;
+        height: 33%;
+    }
+    footer article{
+        width: 49%;
+    }
+}
+
+/* Large Device */
+@media only screen and (min-width:992px){
+
+}
